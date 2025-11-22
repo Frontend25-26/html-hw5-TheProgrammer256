@@ -1,0 +1,148 @@
+$bd-color: #98A3AE7A;
+$text-color: #363E45;
+$grayed-op: 64%;
+
+@mixin set-text($size, $height) {
+  margin: 0;
+  font-weight: 400;
+  font-size: $size;
+  line-height: $height;
+  text-decoration: none;
+  color: $text-color;
+}
+
+@mixin horiz($gap) {
+  display: flex;
+  gap: $gap;
+}
+
+@mixin vert($gap) {
+  @include horiz($gap);
+  flex-direction: column;
+}
+
+@mixin grayed {
+  opacity: $grayed-op;
+}
+
+@mixin list($gap) {
+  @include horiz($gap);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin spacer($height) {
+  height: $height;
+  @include horiz(0);
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin preciseXY($totalX, $totalY, $width, $height, $left, $top) {
+  left: $left;
+  top: $top;
+  right: calc(#{$totalX} - #{$width} - #{$left});
+  bottom: calc(#{$totalY} - #{$height} - #{$top});
+}
+
+@mixin precise($width, $height, $left, $top) {
+  @include preciseXY(24px, 24px, $width, $height, $left, $top);
+}
+
+h1 {
+  @include set-text(3rem, 3.625rem);
+}
+
+h2 {
+  @include set-text(3rem, 3rem);
+}
+
+h3 {
+  @include set-text(1.25rem, 1.5rem);
+}
+
+h4 {
+  @include set-text(1rem, 1.5rem);
+}
+
+h5, p {
+  @include set-text(1rem, 1.5rem);
+  @include grayed;
+}
+
+p.Copyright {
+  @include set-text(0.875rem, 1rem);
+}
+
+.Content {
+  @include vert(7.5rem);
+}
+
+.Hidden {
+  display: none;
+}
+
+.Menu {
+  @include list(0.5rem);
+
+  &Item .Link {
+      display: block;
+      border: 0.0625rem solid $bd-color;
+      border-radius: 0.5rem;
+      padding: 1rem 1.25rem;
+      @include set-text(0.875rem, 0.875rem);
+  }
+}
+
+.Image {
+  height: 25rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+}
+
+#header {
+  @include spacer(6rem);
+}
+
+#about .Image {
+  margin-top: 2.5rem;
+  width: 100%;
+}
+
+#experience {
+  @include vert(2.5rem);
+
+  .Job {
+    @include horiz(2rem);
+
+    .Desc {
+      @include vert(1rem);
+
+      .Position {
+        @include vert(0.5rem);
+      }
+
+      .Texts {
+        @include vert(1rem);
+      }
+    }
+  }
+}
+
+#footer {
+@include spacer(9rem);
+
+  .Socials {
+    @include list(2rem);
+
+    .Social {
+      @include horiz(0);
+      justify-content: center;
+      align-items: center;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+}

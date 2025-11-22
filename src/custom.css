@@ -1,0 +1,133 @@
+h1 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 3.625rem;
+  text-decoration: none;
+  color: #363E45; }
+
+h2 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 3rem;
+  text-decoration: none;
+  color: #363E45; }
+
+h3 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+  color: #363E45; }
+
+h4 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+  color: #363E45; }
+
+h5, p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+  color: #363E45;
+  opacity: 64%; }
+
+p.Copyright {
+  margin: 0;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  text-decoration: none;
+  color: #363E45; }
+
+.Content {
+  display: flex;
+  gap: 7.5rem;
+  flex-direction: column; }
+
+.Hidden {
+  display: none; }
+
+.Menu {
+  display: flex;
+  gap: 0.5rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+  .MenuItem .Link {
+    display: block;
+    border: 0.0625rem solid #98A3AE7A;
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    margin: 0;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+    text-decoration: none;
+    color: #363E45; }
+
+.Image {
+  height: 25rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem; }
+
+#header {
+  height: 6rem;
+  display: flex;
+  gap: 0;
+  align-items: center;
+  justify-content: space-between; }
+
+#about .Image {
+  margin-top: 2.5rem;
+  width: 100%; }
+
+#experience {
+  display: flex;
+  gap: 2.5rem;
+  flex-direction: column; }
+  #experience .Job {
+    display: flex;
+    gap: 2rem; }
+    #experience .Job .Desc {
+      display: flex;
+      gap: 1rem;
+      flex-direction: column; }
+      #experience .Job .Desc .Position {
+        display: flex;
+        gap: 0.5rem;
+        flex-direction: column; }
+      #experience .Job .Desc .Texts {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column; }
+
+#footer {
+  height: 9rem;
+  display: flex;
+  gap: 0;
+  align-items: center;
+  justify-content: space-between; }
+  #footer .Socials {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    #footer .Socials .Social {
+      display: flex;
+      gap: 0;
+      justify-content: center;
+      align-items: center;
+      width: 1.5rem;
+      height: 1.5rem; }
+
+/*# sourceMappingURL=custom.css.map */

@@ -2,20 +2,68 @@
 <head>
     <meta charset="UTF-8">
     <title>HW5</title>
-    <link rel="stylesheet" href="./style.css">
+    <Link rel="stylesheet" href="./style.css">
+    <Link rel="stylesheet" href="./custom.css">
 </head>
+
 <body>
-<div class="Content">
-    <header id="header">Header</header>
-    <section id="about">About</section>
-    <section id="education">Education</section>
-    <section id="experience">Work Experience</section>
-    <section id="skills">Skills</section>
-    <section id="contacts">Contacts</section>
-    <footer id="footer">Footer</footer>
-</div>
-
-<img class="Image" width="500px"/>
-
+    <div class="Content">
+        <header id="header">
+            <img src="img/logo.svg" alt="Logo">
+            <nav>
+                <ul class="Menu">
+                    <li class="MenuItem"><a href="#about" class="Link">About me</a></li>
+                    <li class="MenuItem"><a href="#education" class="Link">Education</a></li>
+                    <li class="MenuItem"><a href="#experience" class="Link">Work Experience</a></li>
+                    <li class="MenuItem"><a href="#skills" class="Link">Skills</a></li>
+                    <li class="MenuItem"><a href="#contacts" class="Link">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="about">
+    		<h1 class="BigText">Hello!</h1>
+    		<h1 class="BigText">My name is Alex Smith</h1>
+    		<h1 class="BigText">I'm creative front-end developer</h1>
+            <img class="Image" width="1140px"/>
+    	</section>
+        <section id="education" class="Hidden">Education</section>
+        <section id="experience">
+            <h2 class="Title">Work Experience</h2>
+            <nav>
+                <ul class="Menu">
+                    <li class="MenuItem"><a href="#" class="Link">Apple</a></li>
+                    <li class="MenuItem"><a href="#" class="Link">Microsoft</a></li>
+                    <li class="MenuItem"><a href="#" class="Link">Facebook</a></li>
+                </ul>
+            </nav>
+            <div class="Job">
+                <aside class="Desc">
+                    <div class="Position">
+                        <h3 class="Who">Front-end Developer Apple.Inc</h3>
+                        <h5 class="Where">California, United States</h5>
+                    </div>
+                    <h4 class="When">Nov 2020 - Present · Full-time</h4>
+                    <div class="Texts">
+                        <p class="Text">В начале XX века немецкие психологи провели исследования восприятия человеком окружающего мира. Они выявили естественное стремление человека найти порядок в беспорядке.</p>
+                        <p class="Text">Их эксперименты показали, что когда мозг обрабатывает полученные образы, он воспринимает разрозненные элементы как единое целое. Подсознательно мы пытаемся группировать похожие элементы, распознавать закономерности и таким образом упрощать сложные образы.</p>
+                    </div>
+                </aside>
+                <img class="Image" width="554px"/>
+            </div>
+        </section>
+        <section id="skills" class="Hidden">Skills</section>
+        <section id="contacts" class="Hidden">Contacts</section>
+        <footer id="footer">
+            <nav>
+                <ul class="Socials">
+                    <li class="Social"><a href="#" class="Link Instagram"><img src="img/instagram.png" class="LinkSource" alt="Instagram"></a></li>
+                    <li class="Social"><a href="#" class="Link GitHub"><img src="img/github.png" class="LinkSource" alt="GitHub"></a></li>
+                    <li class="Social"><a href="#" class="Link Twitter"><img src="img/twitter.png" class="LinkSource" alt="Twitter"></a></li>
+                    <li class="Social"><a href="#" class="Link LinkedIn"><img src="img/linkedin.png" class="LinkSource" alt="LinkedIn"></a></li>
+                </ul>
+            </nav>
+            <p class="Copyright">© 2023</p>
+        </footer>
+    </div>
 </body>
 </html>
