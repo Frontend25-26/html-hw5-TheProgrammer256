@@ -1,1 +1,1 @@
-export const REPO_NAME = '/hw5-TheProgrammer256'
+export const REPO_NAME = '/html-hw5-TheProgrammer256'
